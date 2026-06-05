@@ -1,0 +1,44 @@
+[gd_project]
+
+config_version=5
+
+[application]
+
+config/name="豆花物语"
+config/version="0.1.0"
+run/main_scene="res://scenes/main_menu/main_menu.tscn"
+config/features=PackedStringArray("4.2", "forward_plus")
+
+[autoload]
+
+TimeManager="*res://scripts/core/time_manager.gd"
+PlayerData="*res://scripts/core/player_data.gd"
+AffectionSystem="*res://scripts/systems/affection_system.gd"
+StoryManager="*res://scripts/systems/story_manager.gd"
+DailyCycle="*res://scripts/systems/daily_cycle.gd"
+BattleSystem="*res://scripts/systems/battle_system.gd"
+SaveSystem="*res://scripts/core/save_system.gd"
+EventBus="*res://scripts/core/event_bus.gd"
+GameManager="*res://scripts/core/game_manager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/vsync/vsync_mode=1
+
+[input]
+
+ui_accept={"deadzone": 0.5, "events": [InputEvent()]}
+ui_select={"deadzone": 0.5, "events": [InputEvent()]}
+ui_cancel={"deadzone": 0.5, "events": [InputEvent()]}
+ui_focus_next={"deadzone": 0.5, "events": [InputEvent()]}
+ui_focus_prev={"deadzone": 0.5, "events": [InputEvent()]}
+ui_left={"deadzone": 0.5, "events": [InputEvent()]}
+ui_right={"deadzone": 0.5, "events": [InputEvent()]}
+ui_up={"deadzone": 0.5, "events": [InputEvent()]}
+ui_down={"deadzone": 0.5, "events": [InputEvent()]}
+
+[rendering]
+
+textures/default_filters/use_nearest=true
