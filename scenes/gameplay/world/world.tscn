@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d0r8vw0ewxeo"]
+
+[node name="World" type="Node2D"]
+
+[node name="MapLayer" type="Node2D" parent="."]
+
+[node name="NPCLayer" type="Node2D" parent="."]
+
+[node name="PlayerLayer" type="Node2D" parent="."]

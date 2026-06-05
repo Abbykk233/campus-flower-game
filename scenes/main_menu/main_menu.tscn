@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd88c5rng5htu"]
+
+[ext_resource type="Script" path="res://scenes/main_menu/main_menu.gd"]
+
+[node name="MainMenu" type="Control"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("res://scenes/main_menu/main_menu.gd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.1, 0.1, 0.15, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+text = "豆花物语"
+
+[node name="NewGame" type="Button" parent="VBoxContainer"]
+text = "新游戏"
+
+[node name="LoadGame" type="Button" parent="VBoxContainer"]
+text = "加载游戏"
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+text = "设置"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+text = "退出"
+
+[connection signal="pressed" from="VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/LoadGame" to="." method="_on_load_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cu0pxf37mvex"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="TimeDisplay" type="Label" parent="."]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.15
+anchor_bottom = 0.05
+text = "6:00"
+
+[node name="DateDisplay" type="Label" parent="."]
+anchor_left = 0.0
+anchor_top = 0.05
+anchor_right = 0.15
+anchor_bottom = 0.1
+text = "1月 1日"
+
+[node name="PlayerStats" type="Label" parent="."]
+anchor_left = 0.0
+anchor_top = 0.1
+anchor_right = 0.15
+anchor_bottom = 0.2
+text = "Lv.1 EXP: 0/100"

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dbcjc21yf8xy"]
+
+[node name="BattleScene" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.2, 0.2, 0.25, 1)
+
+[node name="EnemyLayer" type="Node2D" parent="."]
+position = Vector2(800, 200)
+
+[node name="PlayerLayer" type="Node2D" parent="."]
+position = Vector2(200, 400)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="UI"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PlayerHP" type="Label" parent="UI/HUD"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.2
+anchor_bottom = 0.1
+text = "玩家 HP: 100/100"
+
+[node name="EnemyHP" type="Label" parent="UI/HUD"]
+anchor_left = 0.8
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.1
+text = "敌人 HP: 50/50"
